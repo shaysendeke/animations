@@ -1,0 +1,21 @@
+#animation{
+    height: 200px;
+    width: 400px;
+    background-color: aqua;
+    animation-name: slide;
+    position: relative;
+    /* display: block; */
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    transform: translate(50px);
+    transition-timing-function: ease-in-out;
+    animation-iteration-count: 5;
+
+}
+
+@keyframes slide {
+    0% {left: 0; background-color: blue;}
+    25% {background-color:yellow; border-radius: 12.5%;}
+    50% {background-color: red; border-radius: 22.25%;} 
+    100% {left: 100%; background-color: green;border-radius: 50%; width: 400px; height: 400px;}
+}
